@@ -1,18 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@color/background">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="@dimen/_200"
+            android:layout_height="@dimen/_100"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_50"
+            android:background="@drawable/logo"
+            android:id="@+id/main_logo"
+            android:contentDescription="@string/main_logo" />
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/DFP"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_40" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home_inspection_made_easy"
+            android:layout_marginTop="@dimen/negative10"
+            android:textSize="@dimen/_20"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+        <TextView
+            android:layout_marginTop="@dimen/_40"
+            android:id="@+id/users"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/users"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20"
+            android:textColor="@color/lettersColor"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:layout_width="@dimen/_300"
+
+            android:layout_gravity="center"
+            android:layout_height="@dimen/_300">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/profile_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:listitem="@layout/profile_recyclerview_item" />
+        </LinearLayout>
+
+        <Button
+            android:layout_marginTop="@dimen/_10"
+            android:id="@+id/get_started_button"
+            android:layout_width="@dimen/_300"
+            android:textSize="@dimen/_20"
+            android:layout_height="@dimen/_40"
+            android:layout_gravity="center"
+            android:background="@drawable/get_started"
+            android:text="@string/continue_as_guest"
+            android:onClick="goToDash"
+            android:textColor="@color/white" />
+        <TextView
+            android:layout_marginBottom="@dimen/_30"
+            android:id="@+id/newUser"
+            android:onClick="goToSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_user"
+            android:textStyle="bold"
+            android:textSize="@dimen/_20"
+            android:textColor="@color/white"
+            android:layout_gravity="center"/>
+
+
+    </LinearLayout>
+
+</ScrollView>

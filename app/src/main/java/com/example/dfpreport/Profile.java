@@ -133,7 +133,7 @@ public class Profile implements Parcelable {
     public String getPhoto() { return photo; }
     public void setPhoto(String photo) { this.photo = photo; }
 
-    public String geFullName(){
+    public String getFullName(){
         StringBuilder fullName = new StringBuilder();
         fullName.append(firstName);
         fullName.append(" ");

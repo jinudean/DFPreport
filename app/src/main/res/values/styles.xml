@@ -1,0 +1,49 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/background</item>
+        <item name="colorAccent">@color/lettersColor</item>
+        <item name="drawerArrowStyle">@style/DrawerIcon</item>
+        <item name="android:divider">@drawable/menu_item_padding</item>
+        <item name="android:listDivider">@android:color/transparent</item>
+
+    </style>
+    <style name="Fragmentstyle" parent="android:Theme.Dialog">
+        <item name="android:windowBackground">@color/background</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="DrawerIcon" parent="Widget.AppCompat.DrawerArrowToggle">
+        <item name="color">@color/white</item>
+    </style>
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:windowBackground">@color/silver</item>
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowMinWidthMajor">90%</item>
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorAccent">@color/silver</item>
+        <item name="android:textColor">@color/background</item>
+        <item name="android:minHeight">20dp</item>
+        <item name="android:windowMinWidthMinor">90%</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="android:Theme.Light">
+    </style>
+
+    <style name="AppThemeColor" parent="SpinnerTheme">
+        <item name="android:spinnerDropDownItemStyle">@style/SpinnerStyle</item>
+    </style>
+
+    <style name="SpinnerStyle" parent="@android:style/Widget.Holo.DropDownItem.Spinner">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+</resources>
