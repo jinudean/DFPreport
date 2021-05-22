@@ -12,8 +12,8 @@ public class AirplaneInfo {
     @ColumnInfo(name = "airplaneInfoId")
     private Integer airplaneInfoId;
 
-    @ColumnInfo(name = "fleedInfo")
-    private String fleedInfo;
+    @ColumnInfo(name = "fleetInfo")
+    private String fleetInfo;
 
     @NonNull
     @ColumnInfo(name = "reportId")
@@ -23,7 +23,7 @@ public class AirplaneInfo {
     @ColumnInfo(name = "tailNumber")
     private String tailNumber;
 
-    @ColumnInfo(name = "S/W_PartNumber")
+    @ColumnInfo(name = "swPartNumber")
     private String swPartNumber;
 
     @ColumnInfo(name = "mediaVersion")
@@ -37,12 +37,12 @@ public class AirplaneInfo {
         this.airplaneInfoId = airplaneInfoId;
     }
 
-    public String getFleedInfo() {
-        return fleedInfo;
+    public String getFleetInfo() {
+        return fleetInfo;
     }
 
-    public void setFleedInfo(String fleedInfo) {
-        this.fleedInfo = fleedInfo;
+    public void setFleedInfo(String fleetInfo) {
+        this.fleetInfo = fleetInfo;
     }
 
     @NonNull
@@ -79,11 +79,11 @@ public class AirplaneInfo {
         this.mediaVersion = mediaVersion;
     }
 
-    public AirplaneInfo(@NonNull String tailNumber, String fleedInfo, String swPartNumber, String mediaVersion, @NonNull Integer reportId) {
+    public AirplaneInfo(@NonNull String tailNumber, String fleetInfo, String swPartNumber, String mediaVersion, @NonNull Integer reportId) {
         this.airplaneInfoId = null;
         this.reportId = reportId;
         this.tailNumber = tailNumber;
-        this.fleedInfo = fleedInfo;
+        this.fleetInfo = fleetInfo;
         this.swPartNumber =swPartNumber;
         this.mediaVersion = mediaVersion;
     }
