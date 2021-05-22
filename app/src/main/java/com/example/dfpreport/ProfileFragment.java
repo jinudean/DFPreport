@@ -52,7 +52,7 @@ public class ProfileFragment  extends DialogFragment {
         fName = (EditText) view.findViewById(R.id.firstnameFrag);
         lName = (EditText) view.findViewById(R.id.lastnameFrag);
         eNumber = (EditText) view.findViewById(R.id.employeeNumberFrag);
-        station = (EditText) view.findViewById(R.id.companyFrag);
+        station = (EditText) view.findViewById(R.id.stationFrag);
         Email = (EditText) view.findViewById(R.id.emailFrag);
         phone = (EditText) view.findViewById(R.id.phoneFrag);
 

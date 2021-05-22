@@ -72,7 +72,7 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/license_number"
+                android:text="@string/employee_number"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/lettersColor" />
 
@@ -88,12 +88,12 @@
 
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/company_name"
+                android:text="@string/station_name"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="@color/lettersColor" />
 
             <EditText
-                android:id="@+id/companyFrag"
+                android:id="@+id/stationFrag"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"

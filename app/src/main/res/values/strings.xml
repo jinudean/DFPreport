@@ -5,9 +5,9 @@
     <string name="get_started">GET STARTED</string>
     <string name="sign_up">SIGN UP</string>
     <string name="welcome">WELCOME</string>
-    <string name="license_number">License Number</string>
+    <string name="employee_number">Employee Number</string>
     <string name="username">Username</string>
-    <string name="company_name">Company Name</string>
+    <string name="station_name">Station Name</string>
     <string name="email">Email</string>
     <string name="phone">Phone</string>
     <string name="users">USERS</string>
