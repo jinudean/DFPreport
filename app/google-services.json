@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "815957330336",
+    "project_id": "dfpreport-9f570",
+    "storage_bucket": "dfpreport-9f570.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:815957330336:android:9bb0d05a86c40bcb07fcc5",
+        "android_client_info": {
+          "package_name": "com.example.dfpreport"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "815957330336-cs1vbuj6tmoqhicdjch42sbqefjbu1j4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA8QktNO1AlqmKhWi4wrj7RvtxvdbQZse0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "815957330336-cs1vbuj6tmoqhicdjch42sbqefjbu1j4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
