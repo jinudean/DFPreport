@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewSweepCheck"
+    android:background="@color/background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_20"
+            android:layout_marginTop="@dimen/_100"
+            android:layout_marginRight="@dimen/_20"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/ns_inbound"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:backgroundTint="@color/white"
+                android:hint="@string/inboundairport"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lettersColor" />
+
+            <TextView
+                android:id="@+id/ns_inboundflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inbound"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ns_inboundNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:backgroundTint="@color/white"
+                android:hint="@string/inboundairport"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lettersColor" />
+
+            <TextView
+                android:id="@+id/ns_inflightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/inbound"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ns_outbound"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:backgroundTint="@color/white"
+                android:hint="@string/outboundairport"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lettersColor" />
+
+            <TextView
+                android:id="@+id/ns_outboundflight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outbound"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/ns_outboundNumber"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40"
+                android:backgroundTint="@color/white"
+                android:hint="@string/outboundairport"
+                android:textColor="@color/white"
+                android:textColorHint="@color/lettersColor" />
+
+            <TextView
+                android:id="@+id/ns_outflightNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/outbound"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/ni_create_report"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_25"
+                android:layout_marginBottom="@dimen/_25"
+                android:background="@drawable/form"
+                android:backgroundTint="@color/colorPrimary"
+                android:gravity="center"
+                android:text="@string/submit_and_continue"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_20" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

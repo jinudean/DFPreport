@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AirplaneInfoFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/ac_title"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/airplane_info"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="@dimen/_40" />
+
+
+            <LinearLayout
+                android:id="@+id/airplaneinfo_fragment"
+                android:layout_width="@dimen/_350"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/ac_fleetinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac_fleetinfo"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20" />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/ac_fleetinfo_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/ac_fleetinfo_hint"
+                    android:backgroundTint="@color/white"
+                    android:hint="A330 Neo"
+
+                    android:textColorHint="@color/lettersColor"
+                    android:textSize="@dimen/_20" />
+
+                <TextView
+                    android:id="@+id/ac_tailnumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac_tailnumber"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20" />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/ac_tailnumber_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/ac_tailnumber_hint"
+                    android:backgroundTint="@color/white"
+                    android:hint="4 digit"
+                    android:textColorHint="@color/lettersColor"
+                    android:textSize="@dimen/_20" />
+
+                <TextView
+                    android:id="@+id/ac_sw"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac_sw"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20" />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/ac_swpart_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/ac_sw_hint"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/lettersColor"
+                    android:textSize="@dimen/_20" />
+
+                <TextView
+                    android:id="@+id/ac_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac_media"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_20" />
+
+                <EditText
+                    android:textColor="@color/white"
+                    android:id="@+id/ac_media_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:autofillHints="@string/ac_media_hint"
+                    android:backgroundTint="@color/white"
+                    android:textColorHint="@color/lettersColor"
+                    android:textSize="@dimen/_20" />
+
+
+                <Button
+                    android:layout_marginTop="@dimen/_20"
+                    android:id="@+id/sd_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/form"
+                    android:layout_marginBottom="@dimen/_20"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:text="@string/submit_and_continue"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_25" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</FrameLayout>

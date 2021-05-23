@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".PDFsFragment">
+
+    <LinearLayout
+        android:layout_width="@dimen/_350"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:id="@+id/pdfs_fragment"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pdf_header"
+            android:text="@string/pdf_reports"
+            android:textSize="@dimen/_30"
+            android:textColor="@color/headerColor"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_10"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300"
+            android:layout_marginTop="@dimen/_10"
+            android:id="@+id/pdf_recyclerview"
+            tools:listitem="@layout/pdf_recyclerview_item"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/send_pdf"
+            android:layout_marginTop="@dimen/_30"
+            android:layout_gravity="center"
+            android:text="@string/send_pdf"
+            android:textSize="@dimen/_20"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
+
+
+
+</FrameLayout>

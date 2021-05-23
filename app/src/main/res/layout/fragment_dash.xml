@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DashFragment"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:id="@+id/appDash"
+        android:layout_width="@dimen/_350"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/dash_frag_recent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10"
+            android:text="@string/recent_SweepCheck"
+            android:textAlignment="center"
+            android:textColor="@color/headerColor"
+            android:textSize="@dimen/_30"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/report_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dash_frag_recent"
+            tools:listitem="@layout/report_recyclerview_item" />
+        <Button
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_30"
+            android:layout_width="@dimen/_250"
+            android:layout_height="wrap_content"
+            android:id="@+id/dash_frag_select_inspection"
+            android:text="@string/select_report"
+            android:textSize="@dimen/_20"
+            android:layout_marginBottom="@dimen/_10"
+            android:textAlignment="center"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"/>
+
+
+        <Button
+            android:layout_width="@dimen/_250"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/dash_frag_new_inspection"
+            android:text="@string/new_report"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_20"
+            tools:ignore="onClick" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

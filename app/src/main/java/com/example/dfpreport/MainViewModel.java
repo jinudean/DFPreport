@@ -59,8 +59,8 @@ public class MainViewModel extends AndroidViewModel {
     }
 
     // UPDATE
-    public void updateReport(Integer reportId, String inBound, String outBound) {
-        DFPreportRepository.updateReport(reportId, inBound, outBound);
+    public void updateReport(Integer reportId, String inBound, String inflight, String outBound, String outflight) {
+        DFPreportRepository.updateReport(reportId, inBound, inflight, outBound, outflight);
     }
 
     public void updateAirplaneInfo(Integer reportId, String fleetInfo, String tailNumber, String swPartNumber,String mediaVersion) {

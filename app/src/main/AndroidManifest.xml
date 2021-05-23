@@ -26,8 +26,8 @@
         <activity android:name=".AppActivity"
             android:screenOrientation="portrait"/>
         <provider
-            android:authorities="com.example.Foundations.file_provider"
             android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.Foundations.file_provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
@@ -36,7 +36,6 @@
 
         </provider>
     </application>
-    <uses-permission android:name="android.permission.INTERNET" />
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
 </manifest>

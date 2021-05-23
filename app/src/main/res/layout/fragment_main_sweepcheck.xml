@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainInspectionFragment"
+    android:background="@color/background">
+
+    <TextView
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_inspection_title"
+        android:text="@string/current_insp"
+        android:textSize="@dimen/_30"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/main_inspection_title"
+        app:layout_constraintBottom_toTopOf="@+id/mi_add_category"
+        >
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginStart="@dimen/_30"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/mi_category_recyclerview"
+            tools:listitem="@layout/mi_category_item"
+            />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mi_add_category"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/add_category"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <Button
+        android:background="@drawable/ic_baseline_check_24"
+        android:layout_width="@dimen/_60"
+        android:layout_height="wrap_content"
+        android:id="@+id/mi_done_button"
+        android:backgroundTint="@color/white"
+        app:layout_constraintStart_toEndOf="@id/mi_add_category"
+        app:layout_constraintEnd_toStartOf="@id/mi_add_subcategory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mi_add_subcategory"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/add_subcategory"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

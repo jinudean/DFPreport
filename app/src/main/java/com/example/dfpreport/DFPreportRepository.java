@@ -69,9 +69,9 @@ public class DFPreportRepository {
         });
     }
 
-    void updateReport(Integer reportId, String inBound, String outBound ) {
+    void updateReport(Integer reportId, String inBound, String inflight, String outBound, String outflight ) {
         DFPreportRoomDatabase.databaseWriteExecutor.execute(() -> {
-            dfPreportDao.updateReport(reportId,inBound,outBound);
+            dfPreportDao.updateReport(reportId, inBound, inflight, outBound, outflight);
         });
     }
 

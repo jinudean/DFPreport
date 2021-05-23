@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:id="@+id/profile" android:title="@string/profile" android:icon="@drawable/ic_baseline_account_circle_24"/>
-    <item android:id="@+id/inspections" android:title="@string/inspections" android:icon="@drawable/ic_baseline_description_24"/>
+    <item android:id="@+id/inspections" android:title="@string/report" android:icon="@drawable/ic_baseline_description_24"/>
     <item android:id="@+id/checklists" android:title="@string/checklists" android:icon="@drawable/ic_baseline_check_circle_24"/>
     <item android:id="@+id/pdfs" android:title="@string/pdfs" android:icon="@drawable/ic_baseline_picture_as_pdf_24"/>
     <item android:id="@+id/logout" android:title="@string/logout" android:icon="@drawable/ic_baseline_exit_to_app_24"/>

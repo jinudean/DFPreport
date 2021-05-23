@@ -18,8 +18,14 @@ public class Report {
     @ColumnInfo(name = "inBound")
     private String inBound;
 
+    @ColumnInfo(name = "inflight")
+    private String inflight;
+
     @ColumnInfo(name = "outBound")
     private String outBound;
+
+    @ColumnInfo(name = "outflight")
+    private String outflight;
 
     @ColumnInfo(name = "pdf")
     private String pdf;
@@ -65,21 +71,42 @@ public class Report {
         this.pdf = pdf;
     }
 
+    public String getInflight() {
+        return inflight;
+    }
+
+    public void setInflight(String inflight) {
+        this.inflight = inflight;
+    }
+
+    public String getOutflight() {
+        return outflight;
+    }
+
+    public void setOutflight(String outflight) {
+        this.outflight = outflight;
+    }
+
     public String getFlightInfo() {
         StringBuilder flight = new StringBuilder();
         flight.append("Inbound : [");
         flight.append(getInBound());
-        flight.append("], [");
+        flight.append("] + ");
+        flight.append(getInflight());
+        flight.append(" <- SEA -> [");
         flight.append(getOutBound());
-        flight.append("]");
+        flight.append("] + ");
+        flight.append(getOutflight());
         return flight.toString();
     }
 
-    public Report(@NonNull Integer profileId, String inBound, String outBound, String pdf){
+    public Report(@NonNull Integer profileId, String inBound, String inflight, String outBound, String outflight, String pdf){
         this.reportId = null;
         this.profileId = profileId;
         this.inBound = inBound;
+        this.inflight = inflight;
         this.outBound = outBound;
+        this.outflight = outflight;
         this.pdf = pdf;
     }
 }

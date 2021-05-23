@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".SweepCheckFragment">
+
+    <LinearLayout
+        android:id="@+id/inspections_fragment"
+        android:layout_width="@dimen/_350"
+        android:layout_gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/inspection_header"
+            android:text="@string/all_fieldreport"
+            android:textSize="@dimen/_30"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/_10"
+            android:textColor="@color/headerColor"/>
+        <androidx.recyclerview.widget.RecyclerView
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/inspection_header"
+            android:layout_marginTop="@dimen/_10"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300"
+            android:id="@+id/all_inspections_recyclerview"
+            tools:listitem="@layout/report_recyclerview_item"/>
+
+        <Button
+            android:layout_marginTop="@dimen/_30"
+            android:background="@color/colorPrimary"
+            android:layout_width="@dimen/_250"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/select_inspection"
+            android:text="@string/select_report"
+            android:textSize="@dimen/_20"
+            android:layout_marginBottom="@dimen/_10"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/inspection_frag_new_inspection"/>
+        <Button
+            android:layout_width="@dimen/_250"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/inspection_frag_new_inspection"
+            android:text="@string/start_new_report"
+            android:textSize="@dimen/_20"
+            android:layout_marginBottom="@dimen/_dp05"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

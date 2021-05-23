@@ -31,8 +31,8 @@ public interface DFPreportDao {
     @Query("UPDATE profile_table SET firstName = :firstName, lastName  = :lastName, email = :email, phone = :phone, station = :station, employeeNumber = :employeeNumber, photo = :photo WHERE profileId = :profileId")
     void updateProfileInfo(Integer profileId, String firstName, String lastName, String email, String phone, String station, String employeeNumber, String photo);
 
-    @Query("UPDATE report_table SET inBound = :inBound, outBound = :outBound WHERE reportId = :reportId")
-    void updateReport(Integer reportId, String inBound, String outBound);
+    @Query("UPDATE report_table SET inBound = :inBound, inflight = :inflight, outBound = :outBound, outflight = :outflight WHERE reportId = :reportId")
+    void updateReport(Integer reportId, String inBound, String inflight, String outBound, String outflight);
 
     @Query("UPDATE airplaneinfo_table SET fleetInfo = :fleetInfo, tailNumber = :tailNumber, swPartNumber = :swPartNumber, mediaVersion = :mediaVersion WHERE reportId =:reportId")
     void updateAirplaneInfo(Integer reportId, String fleetInfo, String tailNumber, String swPartNumber,String mediaVersion );

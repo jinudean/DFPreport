@@ -15,28 +15,28 @@
     <string name="continue_as_guest">SELECT USER</string>
     <string name="empty_field">Please check for empty or Error fields</string>
     <string name="profile">Profile</string>
-    <string name="inspections">Inspections</string>
+    <string name="report">Report</string>
     <string name="checklists">Checklists</string>
     <string name="pdfs">PDFs</string>
     <string name="settings">Settings</string>
     <string name="logout">Logout</string>
-    <string name="user_email">user@foundations.com</string>
+    <string name="user_email">user@Delta.com</string>
     <string name="open">Open</string>
     <string name="close">Close</string>
     <string name="userProfile">currentUserProfile</string>
+
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="basic_information">Basic Information</string>
-    <string name="buyer_full_name">Buyer Full Name</string>
-    <string name="seller_full_name">Seller Full Name</string>
-    <string name="site_address">Site Address</string>
-    <string name="zip_code">Zip Code</string>
-    <string name="city">City</string>
-    <string name="state">State</string>
-    <string name="buyer_information">Buyer Information</string>
-    <string name="address">Address</string>
-    <string name="seller_information">Seller Information</string>
-    <string name="site_information">Site Information</string>
+    <string name="ac_information">Basic Information</string>
+
+    <string name="inbound">Inbound Flight Airport</string>
+    <string name="outbound">Outbound Flight Airport</string>
+    <string name="inboundNumber">Inbound Flight Number</string>
+    <string name="outboundNumber">Outbound Flight Number</string>
+
+
+
+    <string name="flight_information">Flight Information</string>
     <string name="first_name">First Name</string>
     <string name="last_name">Last Name</string>
     <string name="save">SAVE</string>
@@ -53,37 +53,26 @@
     <string name="overview">Overview</string>
     <string name="windows">Windows</string>
     <string name="doors">Doors</string>
-    <string name="recent_inspections">Recent Inspections</string>
-    <string name="all_inspections">Inspections</string>
-    <string name="select_inspection">Select Inspection</string>
-    <string name="start_new_inspection">Start New Inspection</string>
+    <string name="recent_SweepCheck">Recent Field Report</string>
+    <string name="all_fieldreport">Field Report</string>
+    <string name="select_report">Select Report</string>
+    <string name="start_new_report">Start New Report</string>
     <string name="please_select_insp">Please select a profile</string>
 
-    <string name="new_inspection">NEW INSPECTION</string>
+    <string name="new_report">NEW Report</string>
     <string name="inspection">INSPECTION</string>
 
-    <string name="site_details_title">Site Details</string>
-    <string name="sd_bedrooms">Bedrooms</string>
+    <string name="airplane_info">Airplane Information</string>
+    <string name="ac_fleetinfo">Fleet</string>
+    <string name="ac_fleetinfo_hint">Fleet A339 or B764</string>
     <string name="_2">2</string>
-    <string name="sd_bd_hint">Number of bedrooms</string>
-    <string name="sd_bathrooms">Bathrooms</string>
-    <string name="sd_ba_hint">Number of bathrooms</string>
+    <string name="ac_tailnumber">A/C Tail Number</string>
+    <string name="ac_tailnumber_hint">4 Digit Tail Number</string>
     <string name="_0">0</string>
-    <string name="sd_stories">Stories</string>
-    <string name="sd_stories_hint">Number of stories</string>
-    <string name="sd_square_feet">Square Feet</string>
-    <string name="sd_sqft_hint">Square Footage</string>
-    <string name="sd_inspection_fee">Inspection Fee</string>
-    <string name="inspection_fee_hint">Inspection fee amount</string>
-    <string name="sd_year_built">Year Built</string>
-    <string name="sd_furnished">Furnished</string>
-    <string name="year_built_hint">Year Built</string>
-    <string name="no_furnished">No</string>
-    <string name="present_at_inspection">Present at Inspection</string>
-    <string name="sd_present_hint">Who is present?</string>
-    <string name="buyer_present">Buyer</string>
-    <string name="orientation">Orientation</string>
-    <string name="orientation_hint">Which was is it facing?</string>
+    <string name="ac_sw">Installed S/W PartNumber</string>
+    <string name="ac_sw_hint">Enter </string>
+    <string name="ac_media">Airplane Current Media</string>
+    <string name="ac_media_hint">Year and Month</string>
     <string name="north">North</string>
     <string name="submit_and_continue">Submit and Continue</string>
     <string name="current_report_key">currentReport</string>
@@ -130,12 +119,13 @@
     <string name="main_logo">main logo</string>
     <string name="tom">Tom</string>
     <string name="smtih">Smith</string>
-    <string name="_1256_marline_ct">1256 Marline CT</string>
+    <string name="inboundairport">ex) HND</string>
+    <string name="outboundairport">ex) HND</string>
     <string name="pdfimage">pdfimage</string>
     <string name="profile_image_desc">profile image</string>
     <string name="pdf_reports">PDF Reports</string>
     <string name="send_pdf">SEND PDF</string>
-    <string name="title_page_title">Home Inspection Report</string>
-    <string name="prepedfor">Prepared for</string>
+    <string name="pdf_page_title">DFP Field Support Report</string>
+    <string name="preparedfor">Prepared for</string>
 
 </resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:background="@color/pdfColor"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:text="@string/ready_to_generate_pdf"
+                    android:textSize="@dimen/_30" />
+
+
+
+
+                <ImageView
+                    android:layout_width="@dimen/_50"
+                    android:layout_height="@dimen/_80"
+                    android:src="@drawable/ic_baseline_picture_as_pdf_24"
+                    android:contentDescription="@string/pdfimage" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="@string/ac_information"
+
+                android:textSize="@dimen/_30"/>
+
+
+            <TextView
+                android:id="@+id/pdf_flight_information"
+                android:layout_gravity="center"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/flight_information"
+                android:textSize="@dimen/_25"/>
+
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_30"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/inbound"
+                    android:textSize="@dimen/_25" />
+
+                <EditText
+                    android:id="@+id/pdf_inbound"
+                    android:layout_width="@dimen/_230"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/inbound"
+                    android:textSize="@dimen/_25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/inbound"
+                    android:textSize="@dimen/_25" />
+
+                <EditText
+                    android:id="@+id/pdf_inboundNumber"
+                    android:layout_width="@dimen/_230"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:text="@string/inbound"
+                    android:textSize="@dimen/_25" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/outbound"
+                    android:textSize="@dimen/_25" />
+
+                <EditText
+                    android:id="@+id/pdf_outboundNumber"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_230"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outbound"
+                    android:textSize="@dimen/_25"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/_50"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/outbound"
+                    android:textSize="@dimen/_25" />
+
+                <EditText
+                    android:id="@+id/pdf_outbound"
+                    android:layout_gravity="center"
+                    android:layout_width="@dimen/_230"
+                    android:layout_height="wrap_content"
+                    android:text="@string/outbound"
+                    android:textSize="@dimen/_25"/>
+            </LinearLayout>
+
+
+            <Button
+                android:layout_marginTop="@dimen/_30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/save_pdf"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:background="@color/pdfColor"
+                android:id="@+id/save_pdf"
+                android:layout_marginBottom="@dimen/_40"/>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

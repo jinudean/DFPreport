@@ -172,6 +172,8 @@ public class Profile implements Parcelable {
         parcel.writeString(email);
         parcel.writeString(phone);
         parcel.writeString(station);
+        parcel.writeString(photo);
+
 
     }
 }

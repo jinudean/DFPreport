@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/background">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_title"
+        android:text="@string/list_item"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10"
+        android:id="@+id/list_item_subcat"
+        android:textSize="@dimen/_20"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_item_title"
+        android:text="@string/select_subcategory_for_item" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_40"
+        android:id="@+id/subcategory_spinner"
+        android:theme="@style/SpinnerTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_item_subcat"
+        />
+
+    <EditText
+        android:background="@drawable/form"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_100"
+        android:hint="@string/enter_notes"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:textColorHint="@color/background"
+        android:autofillHints="@string/enter_notes"
+        android:id="@+id/list_item_notes"
+        android:inputType="textMultiLine"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/subcategory_spinner"
+        />
+
+    <Button
+        android:background="@drawable/ic_baseline_add_a_photo_24"
+        android:layout_width="@dimen/_40"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_height="@dimen/_40"
+        android:id="@+id/add_photo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/list_item_notes"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item_photo_dialog"
+        app:layout_constraintTop_toBottomOf="@id/list_item_notes"
+        app:layout_constraintStart_toStartOf="parent"
+        android:contentDescription="@string/item_photo" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
