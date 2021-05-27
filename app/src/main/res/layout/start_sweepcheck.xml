@@ -52,7 +52,7 @@
                 android:id="@+id/ns_inflightNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/inbound"
+                android:text="@string/inboundNumber"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20"
                 android:textStyle="bold" />
@@ -88,7 +88,7 @@
                 android:id="@+id/ns_outflightNumber"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/outbound"
+                android:text="@string/outboundNumber"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_20"
                 android:textStyle="bold" />

@@ -202,7 +202,7 @@ public class SummaryFragment extends Fragment {
         ByteArrayOutputStream stream = new ByteArrayOutputStream();
         logoBitmap.compress(Bitmap.CompressFormat.JPEG, 100, stream); //compress to which format you want.
         Image logo = Image.getInstance(stream.toByteArray());
-        logo.scaleToFit(200, 100);
+        logo.scaleToFit(400, 200);
         logo.setAlignment(ALIGN_CENTER);
         logo.setSpacingAfter(5);
         logo.setSpacingBefore(5);
