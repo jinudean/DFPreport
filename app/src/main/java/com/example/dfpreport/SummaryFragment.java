@@ -94,7 +94,7 @@ public class SummaryFragment extends Fragment {
         Chapter currentCategory = null;
         Section currentSubcategory = null;
 
-        String file_name = "/DFP_Report " + new SimpleDateFormat("yyyyMMdd_HHmmss", Locale.getDefault()).format(System.currentTimeMillis()) + ".pdf";
+        String file_name = "/Delta Flight Field Report -  " + new SimpleDateFormat("yyyyMMdd", Locale.getDefault()).format(System.currentTimeMillis()) + ".pdf";
         File storageDir = getContext().getExternalFilesDir(Environment.DIRECTORY_DCIM);
         String file_path = "/" + storageDir.getAbsolutePath() + file_name;
         Document document = new Document();
@@ -219,7 +219,7 @@ public class SummaryFragment extends Fragment {
         flightinfo.setSpacingAfter(5);
         document.add(flightinfo);
         
-        Paragraph propertyInspected = new Paragraph("PROPERTY INSPECTED:");
+        Paragraph propertyInspected = new Paragraph("Airplane Route");
         propertyInspected.setAlignment(ALIGN_CENTER);
         document.add(propertyInspected);
         Paragraph address = new Paragraph(currentReport.getFlightInfo() ,
@@ -229,11 +229,11 @@ public class SummaryFragment extends Fragment {
         document.add(address);
         DateTimeFormatter dtf = DateTimeFormatter.ofPattern("MM/dd/yyyy");
         LocalDateTime now = LocalDateTime.now();
-        Paragraph inspectionDate = new Paragraph("Date of Inspection: " + dtf.format(now));
+        Paragraph inspectionDate = new Paragraph("Date of Performed: " + dtf.format(now));
         inspectionDate.setAlignment(ALIGN_CENTER);
         document.add(inspectionDate);
         Profile inspector = fragmentSwitcher.getProfile();
-        Paragraph inspectorTitle = new Paragraph("Inspected By:", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20));
+        Paragraph inspectorTitle = new Paragraph("Support By:", FontFactory.getFont(FontFactory.HELVETICA_BOLD, 20));
         inspectorTitle.setAlignment(ALIGN_CENTER);
         inspectorTitle.setSpacingBefore(15);
         inspectorTitle.setSpacingAfter(10);

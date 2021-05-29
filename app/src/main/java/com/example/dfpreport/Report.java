@@ -89,13 +89,13 @@ public class Report {
 
     public String getFlightInfo() {
         StringBuilder flight = new StringBuilder();
-        flight.append("Inbound : [");
+        flight.append("[");
         flight.append(getInBound());
-        flight.append("] + ");
+        flight.append("] DAL");
         flight.append(getInflight());
-        flight.append(" <- SEA -> [");
+        flight.append(" <-  SEA  -> [");
         flight.append(getOutBound());
-        flight.append("] + ");
+        flight.append("] DAL");
         flight.append(getOutflight());
         return flight.toString();
     }

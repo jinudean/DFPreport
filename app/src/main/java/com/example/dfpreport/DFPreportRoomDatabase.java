@@ -75,15 +75,15 @@ public abstract class DFPreportRoomDatabase extends RoomDatabase {
                 //fifth category
                 category = new Category("Monitors (ITU)");
                 dfPreportDao.insertCategory(category);
-                subCategory = new SubCategory(5, "Delta One");
+                subCategory = new SubCategory(5, "Delta One <Rows 1-8> P/N L0005-01 {18.5 inch}");
                 dfPreportDao.insertSubCategory(subCategory);
-                subCategory = new SubCategory(5, "Delta Primium Select");
+                subCategory = new SubCategory(5, "Delta Primium Select <Rows 20-23> P/N L0003-01 {13.3 inch}");
                 dfPreportDao.insertSubCategory(subCategory);
-                subCategory = new SubCategory(5, "Delta Comport");
+                subCategory = new SubCategory(5, "Delta Comport <Rows 30-36> P/N L0001-02 {10.1 inch}");
                 dfPreportDao.insertSubCategory(subCategory);
-                subCategory = new SubCategory(5, "Delta Economy");
+                subCategory = new SubCategory(5, "Delta Economy <Rows 37-58> P/N L0001-02 {10.1 inch}");
                 dfPreportDao.insertSubCategory(subCategory);
-                subCategory = new SubCategory(5, "Public Display");
+                subCategory = new SubCategory(5, "Public Display <Wall 30 & 42> P/N L0003-01 {13.3 inch}");
 
                 //sixth category
                 dfPreportDao.insertSubCategory(subCategory);
